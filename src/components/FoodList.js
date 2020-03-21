@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/foodlist.css'
 import '../components/table.css'
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
 
 
 export default function FoodList(props) {
