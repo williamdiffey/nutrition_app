@@ -3,17 +3,16 @@
     justify-content: center;
     padding-bottom: 5%;
     padding-top: 5%;
-
-
 }
 
 .search-bar-container input {
     padding: 5%;
     border-radius: 5px;
     border: none;
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #ac2a2a;
-    width: 100%;
+    width: 65%;
+    height: 30px;
 }
 
 .item-brand {

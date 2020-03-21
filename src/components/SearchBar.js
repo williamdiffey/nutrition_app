@@ -33,8 +33,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="search-bar-container">
-            <form onSubmit={this.handleSubmit}>
-       
+            
             <input
                 className="food-search"
                 type="text"
@@ -42,7 +41,7 @@ class SearchBar extends React.Component {
                 onChange={this.handleChange}
                 placeholder="search"
             />
-            </form>
+            
             </div>
         )
     }

@@ -1,5 +1,3 @@
-@media only screen and (max-width: 600px) {
-
     .food-info {
         transform: translateY(-40%);
         padding: 0;
@@ -22,15 +20,15 @@
     font-size: .8em;
     transform: translateY(-100%);
 }
-}
+
 
 
 
 .spec-foods {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     padding: 0;
-    position: absolute;
+    /* position: absolute; */
 }
 
 /* .table-container {
