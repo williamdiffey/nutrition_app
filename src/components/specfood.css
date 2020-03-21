@@ -1,37 +1,30 @@
-/* @media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 600px) {
 
     .food-info {
         transform: translateY(-40%);
         padding: 0;
     }
 
-.food-name {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-transform: capitalize;
-}
-
-
 .back-button {
-    background-color: rgb(253, 225, 11);
+    background-color: rgb(250, 229, 77);
     padding-bottom: 5%;
     transform: translateY(-20%);
     margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
     font-size: 1.5em;
     padding: 1em;
     width: 200px;
     height: 10px;  
     padding-bottom: 1em;
-    border-radius: 6px;
 }
 
 .back-button h2 {
     font-size: .8em;
     transform: translateY(-100%);
 }
-/* } */
+}
+
+
 
 .spec-foods {
     height: 100vh;

@@ -17,7 +17,7 @@ h1 {
 
 #homepage-icon {
   transform: translateY(10%);
-  color: rgb(253, 225, 11);
+  height: 10vh;
 }
 
 .top-container {
@@ -25,13 +25,35 @@ h1 {
 }
 
 @media only screen and (min-width: 601px) {
-  
-  
 
+  #homepage-icon {
+    transform: translateY(10%);
+    color: rgb(253, 225, 11);
+    height: 15vh;
+  }
 
-}
+  .not-mounted {
+    overflow: hidden;
+  }
+
+  .mounted {
+    overflow: visible;
+  }
+ 
+
+  
+  .top-container {
+    padding-top: 10%;
+  }
+  
+  }
 @media only screen and (min-width: 992px) {
   
+  #homepage-icon {
+    transform: translateY(10%);
+    color: rgb(253, 225, 11);
+    height: 15vh;
+  }
   
   h1 {
     padding: 0;
@@ -42,9 +64,7 @@ h1 {
     font-size: 5rem;
   }
   
-  #homepage-icon {
-    transform: translateY(10%);
-  }
+  
   
   .top-container {
     padding-top: 10%;
@@ -52,21 +72,4 @@ h1 {
   
   }
   
-  @media only screen and (min-width: 601px) {
-
-
-    .not-mounted {
-      overflow: hidden;
-    }
-
-    .mounted {
-      overflow: visible;
-    }
-   
-
-    
-    .top-container {
-      padding-top: 10%;
-    }
-    
-    }
+ 

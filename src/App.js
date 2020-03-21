@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAppleAlt, faHeartbeat, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { REACT_APP_API_KEY } from './config'
+import ramen from './images/ramen.png'
 
 import './App.css';
 
@@ -75,8 +76,8 @@ class App extends React.Component {
       <BrowserRouter>
       <div className="container" >
       <div className="top-container">
-      <h1><FontAwesomeIcon className="icon" id="homepage-icon" 
-      icon={faHeartbeat} /></h1> <h1>Islington Education Nutrition Search</h1>
+      <h1><img id="homepage-icon" 
+      src={ramen} /></h1> <h1>Islington Education Nutrition Search</h1>
 
       </div>
       <div className="spec-food-container">
