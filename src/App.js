@@ -1,20 +1,18 @@
 import React from 'react';
-import { PropTypes } from 'react'
-import { BrowserRouter, Route, Switch, Link, Redirect, withRouter } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import SearchBar from './components/SearchBar'
 import FoodList from './components/FoodList'
 import SpecFoods from './components/SpecFoods'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAppleAlt, faHeartbeat, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { REACT_APP_API_KEY } from './config'
 import ramen from './images/ramen.png'
 
 import './App.css';
 
 config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
-library.add(faHeartbeat, faAppleAlt, faArrowLeft)
+library.add(faArrowLeft)
 
 
 class App extends React.Component {
@@ -77,7 +75,7 @@ class App extends React.Component {
       <div className="container" >
       <div className="top-container">
       <h1><img id="homepage-icon" 
-      src={ramen} /></h1> <h1>Islington Education Nutrition Search</h1>
+      src={ramen} alt="bowl of ramen noodles" /></h1> <h1>Islington Education Nutrition Search</h1>
 
       </div>
       <div className="spec-food-container">

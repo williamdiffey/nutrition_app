@@ -5,6 +5,7 @@ import '../components/specfood.css'
 import '../components/table.css'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { REACT_APP_API_KEY } from '../config'
 import NoData from './NoData'
 
 export default class SpecFoods extends React.Component {
@@ -18,7 +19,7 @@ export default class SpecFoods extends React.Component {
   }
     
   async componentDidMount() {
-    const response = await fetch(`https://api.nal.usda.gov/fdc/v1/${this.props.match.params.food_id}?api_key=MuZ2F5P9sNM6L36BrEsIAziA2vdoH85VFFB5asBE`)
+    const response = await fetch(`https://api.nal.usda.gov/fdc/v1/${this.props.match.params.food_id}?api_key=${REACT_APP_API_KEY}`)
     const json = await response.json()
 
     if (json.foodNutrients.length > 0) {
